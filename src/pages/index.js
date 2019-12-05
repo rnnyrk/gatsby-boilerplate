@@ -2,15 +2,9 @@ import React from 'react';
 import PT from 'prop-types';
 import { graphql } from 'gatsby';
 
-// import { Checklist } from 'common/general';
+import { Template } from 'common/layout';
 
-const Home = ({
-  data: {
-    allWordpressWpApiMenusMenusItems,
-    wordpressAcfOptions: { options },
-    wordpressPage,
-  },
-}) => {
+const Home = () => {
   return (
     <Template>
       Home
@@ -19,7 +13,6 @@ const Home = ({
 };
 
 Home.propTypes = {
-  data: PT.object,
 };
 
 export default Home;
