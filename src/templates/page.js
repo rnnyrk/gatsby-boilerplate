@@ -4,11 +4,13 @@ import { graphql } from 'gatsby';
 
 import { Template } from 'common/layout';
 
-const Page = () => (
-  <Template>
-    <h1>Default page</h1>
-  </Template>
-);
+const Page = () => {
+  return (
+    <Template>
+      <h1>Default page</h1>
+    </Template>
+  );
+}
 
 Page.propTypes = {};
 
