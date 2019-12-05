@@ -1,6 +1,2 @@
-import { Button, LinkButton } from './Buttons';
-
-export {
-  Button,
-  LinkButton,
-};
+export { default as Button } from './Button';
+export { default as LinkButton } from './LinkButton';

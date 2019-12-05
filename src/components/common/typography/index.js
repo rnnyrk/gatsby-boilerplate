@@ -1,7 +1,2 @@
-import Title from './Title';
-import TitleGroup from './TitleGroup';
+export { default as Title } from './Title';
 
-export {
-  Title,
-  TitleGroup,
-};

@@ -1,15 +1,4 @@
-import Container from './Container';
-import Content from './Content';
-import Footer from './Footer';
-import Header from './Header';
-import Meta from './Meta';
-import Template from './Template';
-
-export {
-  Container,
-  Content,
-  Footer,
-  Header,
-  Meta,
-  Template,
-};
+export { default as Container } from './Container';
+export { default as Header } from './Header';
+export { default as Meta } from './Meta';
+export { default as Template } from './Template';
