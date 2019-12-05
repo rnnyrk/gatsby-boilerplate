@@ -1,9 +1,5 @@
-import styled, { css } from 'styled-components';
-import { media } from 'styles/utils';
-import { Link } from 'gatsby';
-
-import { Container } from 'components/layout';
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-
+  background-color: ${(props) => props.theme.colors.black};
 `;
