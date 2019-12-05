@@ -22,11 +22,11 @@ const desktopSizes = {
 const Title = styled.h1`
   margin: 0;
   font-weight: 700;
-  font-family: ${(props) => props.theme.font.quicksand};
+  font-family: ${(props) => props.theme.fonts.primary};
   font-size: ${(props) => mobileSizes[props.as ? props.as : 'h1']};
   line-height: 133%;
   text-transform: uppercase;
-  color: ${(props) => props.theme.brown.medium};
+  color: ${(props) => props.theme.colors.prime};
 
   ${media.tablet`
     font-size: ${(props) => desktopSizes[props.as ? props.as : 'h1']};
