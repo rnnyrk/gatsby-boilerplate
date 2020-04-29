@@ -1,9 +1,10 @@
 import React from 'react';
-import PT from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-const Meta = ({ title, description, image, pathname, article }) => (
+export const Meta: React.FC<MetaProps> = ({
+  title, description, image, pathname, article = false,
+}) => (
   <StaticQuery
     query={query}
     render={({
@@ -55,23 +56,13 @@ const Meta = ({ title, description, image, pathname, article }) => (
   />
 );
 
-Meta.propTypes = {
-  title: PT.string,
-  description: PT.string,
-  image: PT.string,
-  pathname: PT.string,
-  article: PT.bool,
+type MetaProps = {
+  title?: string;
+  description?: string;
+  image?: string;
+  pathname?: string;
+  article: boolean;
 };
-
-Meta.defaultProps = {
-  title: null,
-  description: null,
-  image: null,
-  pathname: null,
-  article: false,
-};
-
-export default Meta;
 
 const query = graphql`
   query Meta {

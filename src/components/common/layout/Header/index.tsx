@@ -2,7 +2,7 @@ import React from 'react';
 
 import { HeaderContainer } from './styled';
 
-const Header = () => {
+export const Header = () => {
   return (
     <HeaderContainer>
       Header
@@ -10,4 +10,3 @@ const Header = () => {
   );
 };
 
-export default Header;

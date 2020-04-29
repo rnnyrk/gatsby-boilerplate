@@ -4,36 +4,26 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Strapi OGSM',
-    titleTemplate: '%s - Strapi OGSM',
-    description: 'Gatsby boilerplate for Strapi CMS',
+    title: 'Gatsby boilerplate',
+    titleTemplate: '%s - Gatsby boilerplate',
+    description: 'Gatsby boilerplate with Typescript and Styled Components',
     image: 'src/assets/images/prime-icon.png',
-    url: 'https://strapi-ogsm.com',
+    url: 'https://ronnyrook.nl',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    'gatsby-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/assets/images/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000,
-        contentTypes: [
-          'article',
-          'user',
-        ],
-      },
-    },
+    'gatsby-plugin-typescript',
+    // 'gatsby-image',
+    // 'gatsby-plugin-sharp',
+    // 'gatsby-transformer-sharp',
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: `${__dirname}/src/assets/images/`,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-module-resolver',
       options: {
@@ -55,26 +45,26 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: `${__dirname}/src/assets/vectors/internal/`,
-        },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'strapi-ogsm',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#010101',
-        theme_color: '#e7ff04',
-        display: 'minimal-ui',
-        icon: 'src/assets/images/prime-icon.png',
-      },
-    },
-    'gatsby-plugin-offline',
+    // {
+    //   resolve: 'gatsby-plugin-react-svg',
+    //   options: {
+    //     rule: {
+    //       include: `${__dirname}/src/assets/vectors/internal/`,
+    //     },
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-manifest',
+    //   options: {
+    //     name: 'gatsby-boilerplate-ts',
+    //     short_name: 'starter',
+    //     start_url: '/',
+    //     background_color: '#010101',
+    //     theme_color: '#e7ff04',
+    //     display: 'minimal-ui',
+    //     icon: 'src/assets/images/prime-icon.png',
+    //   },
+    // },
+    // 'gatsby-plugin-offline',
   ],
 };

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
   display: inline-block;
   text-align: center;
   padding: 12px 30px;
@@ -9,4 +9,3 @@ const Button = styled.button`
   border: 0;
 `;
 
-export default Button;

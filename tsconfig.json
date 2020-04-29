@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "sourceMap": true,
+    "pretty": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "common/*": ["src/components/common/*"],
+      "modules/*": ["src/components/modules/*"],
+      "pages/*": ["src/pages/*"],
+      "templates/*": ["src/templates/*"],
+      "images/*": ["src/assets/images/*"],
+      "vectors/*": ["src/assets/vectors/*"],
+      "services/*": ["src/services/*"],
+      "hooks/*": ["src/hooks/*"],
+      "styles/*": ["src/assets/styles/*"],
+      "styles": ["src/assets/styles/index"],
+      "types": ["src/types/index"]
+    },
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["dom","es2017"
+    ]
+  }
+}

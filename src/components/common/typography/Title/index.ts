@@ -19,7 +19,7 @@ const desktopSizes = {
   h6: '16px',
 };
 
-const Title = styled.h1`
+export const Title = styled.h1`
   margin: 0;
   font-weight: 700;
   font-family: ${(props) => props.theme.fonts.primary};
@@ -33,4 +33,3 @@ const Title = styled.h1`
   `}
 `;
 
-export default Title;

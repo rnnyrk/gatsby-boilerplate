@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { media } from 'styles/utils';
 
-const Container = styled.div`
+export const Container = styled.div`
   position: relative;
   width: 100%;
 
@@ -15,4 +15,3 @@ const Container = styled.div`
   `}
 `;
 
-export default Container;
