@@ -61,7 +61,7 @@ type MetaProps = {
   description?: string;
   image?: string;
   pathname?: string;
-  article: boolean;
+  article?: boolean;
 };
 
 const query = graphql`

@@ -24,27 +24,27 @@ module.exports = {
     //     path: `${__dirname}/src/assets/images/`,
     //   },
     // },
-    {
-      resolve: 'gatsby-plugin-module-resolver',
-      options: {
-        root: './src',
-        aliases: {
-          components: './components',
-          common: './components/common',
-          modules: './components/modules',
-          pages: './pages',
-          styles: './assets/styles',
-          services: './services',
-          templates: './templates',
-          images: './assets/images',
-          vectors: './assets/vectors',
-          static: {
-            root: './public',
-            alias: './static',
-          },
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-module-resolver',
+    //   options: {
+    //     root: './src',
+    //     aliases: {
+    //       components: './components',
+    //       common: './components/common',
+    //       modules: './components/modules',
+    //       pages: './pages',
+    //       styles: './assets/styles',
+    //       services: './services',
+    //       templates: './templates',
+    //       images: './assets/images',
+    //       vectors: './assets/vectors',
+    //       static: {
+    //         root: './public',
+    //         alias: './static',
+    //       },
+    //     },
+    //   },
+    // },
     // {
     //   resolve: 'gatsby-plugin-react-svg',
     //   options: {
