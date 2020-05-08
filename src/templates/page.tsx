@@ -11,7 +11,5 @@ const Page = () => {
   );
 }
 
-Page.propTypes = {};
-
 export default Page;
 
