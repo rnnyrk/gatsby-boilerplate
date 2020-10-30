@@ -28,4 +28,4 @@ type ImageProps = {
     alt_text: string;
     title: string;
   };
-}
+};

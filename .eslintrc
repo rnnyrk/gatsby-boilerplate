@@ -1,9 +1,19 @@
 {
-  "extends": "react-app",
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "react-app"
+  ],
   "settings": {
     "react": {
       "version": "latest"
     }
+  },
+  "globals": {
+    "__DEV__": false,
+    "__TEST__": false,
+    "__ACC__": false,
+    "__PROD__": false
   },
   "rules": {
     "array-bracket-spacing": ["error", "never"],
@@ -15,12 +25,9 @@
     "import/no-duplicates": "error",
     "import/order": ["error", {
       "groups": [
+        "builtin",
         "external",
-        "internal",
-        "index",
-        "parent",
-        "sibling",
-        "builtin"
+        "internal"
       ]
     }],
     "jsx-quotes": ["error", "prefer-double"],
@@ -40,19 +47,17 @@
     "object-curly-spacing": ["error", "always"],
     "prefer-const": ["error"],
     "quotes": ["error", "single"],
-    "react/no-unused-prop-types": 2,
-    "react/prop-types": 2,
     "react/self-closing-comp": ["error", {
       "component": true,
       "html": true
     }],
-    "react/jsx-tag-spacing": {
+    "react/jsx-tag-spacing": ["error", {
       "closingSlash": "never",
       "beforeSelfClosing": "always",
       "afterOpening": "never",
       "beforeClosing": "never"
-    },
-    "semi": ["error", "always"],
+    }],
+    "react-hooks/exhaustive-deps": 0,
     "space-before-blocks": "error",
     "space-before-function-paren": ["error", {
       "anonymous": "always",
@@ -62,20 +67,17 @@
     "space-in-parens": ["error", "never"],
     "space-infix-ops": "error",
     "eol-last": ["error", "always"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "semi": "off",
     "@typescript-eslint/semi": ["error"],
     "@typescript-eslint/ban-ts-ignore": 0,
     "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-empty-interface": 0,
     "@typescript-eslint/prefer-interface": 0,
-    "@typescript-eslint/explicit-member-accessibility": [
-      "error",
-      {
-        "overrides": {
-          "constructors": "no-public"
-        }
-      }
-    ],
+    "@typescript-eslint/explicit-member-accessibility": ["error", {
+      "overrides": { "constructors": "no-public" }
+    }],
     "@typescript-eslint/no-use-before-define": 0,
     "@typescript-eslint/no-object-literal-type-assertion": 0,
     "@typescript-eslint/no-parameter-properties": 0,
@@ -83,6 +85,11 @@
     "@typescript-eslint/prefer-namespace-keyword": 0,
     "@typescript-eslint/no-namespace": 0,
     "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/no-non-null-assertion": 0
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/ban-types": 0,
+    "import/no-anonymous-default-export": 0,
+    "@typescript-eslint/no-redeclare": 0
   }
 }

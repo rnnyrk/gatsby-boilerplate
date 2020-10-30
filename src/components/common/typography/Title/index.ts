@@ -19,17 +19,20 @@ const desktopSizes = {
   h6: '16px',
 };
 
-export const Title = styled.h1`
+export const Title = styled.h1<TitleProps>`
   margin: 0;
   font-weight: 700;
-  font-family: ${(props) => props.theme.fonts.primary};
-  font-size: ${(props) => mobileSizes[props.as ? props.as : 'h1']};
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ as }) => mobileSizes[as ? as : 'h1']};
   line-height: 133%;
   text-transform: uppercase;
-  color: ${(props) => props.theme.colors.prime};
+  color: ${({ theme }) => theme.colors.prime};
 
-  ${media.tablet`
-    font-size: ${(props) => desktopSizes[props.as ? props.as : 'h1']};
+  ${media.tablet<TitleProps>`
+    font-size: ${({ as }) => desktopSizes[as ? as : 'h1']};
   `}
 `;
 
+type TitleProps = {
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5;'
+};

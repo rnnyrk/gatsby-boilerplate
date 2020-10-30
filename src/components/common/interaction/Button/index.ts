@@ -8,4 +8,3 @@ export const Button = styled.button`
   font-weight: 900;
   border: 0;
 `;
-
