@@ -9,7 +9,9 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx src/",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "gatsby": "2.24.91",
