@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sitemap',
     'gatsby-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -24,6 +25,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'fonts',
+        path: `${__dirname}/src/assets/fonts/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-module-resolver',
       options: {
         root: './src',
@@ -32,11 +40,16 @@ module.exports = {
           common: './components/common',
           modules: './components/modules',
           pages: './pages',
-          styles: './assets/styles',
+          styles: './styles',
           services: './services',
+          ducks: './ducks',
+          selectors: './selectors',
           templates: './templates',
           images: './assets/images',
+          fonts: './assets/fonts',
           vectors: './assets/vectors',
+          css: './assets/css',
+          types: './types',
           static: {
             root: './public',
             alias: './static',
