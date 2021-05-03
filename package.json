@@ -5,11 +5,12 @@
   "license": "MIT",
   "author": "Ronny Rook <info@ronnyrook.nl>",
   "scripts": {
+    "develop": "gatsby develop -p 3000",
+    "start": "gatsby develop -p 3000",
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
     "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write src/**/*.{js,jsx}",
     "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx src/",
     "typecheck": "tsc"
   },
