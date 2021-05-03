@@ -26,12 +26,7 @@
 
     You can now view boilerplate in the browser at [http://localhost:3000/](http://localhost:3000/).
 ⠀
-
     View GraphiQL, an in-browser IDE, to explore your site's data and schema at [http://localhost:3000/___graphql](http://localhost:3000/___graphql).
-
-## 👨‍💻 Editor setup
-
-  1. Make sure to install the [VSCode Apollo GraphQL extension](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo) (YES, even this isn’t Apollo project). This plugin will make use of the schema's exported by _gatsby-plugin-typegen_ (See Gatsby plugins section down below).
 
 ## 🎯 Deployment
 
@@ -40,9 +35,7 @@
       - Development. If you run `gatsby develop`, then you will be in the ‘development’ environment.
       - Production. If you run `gatsby build` or `gatsby serve`, then you will be in the ‘production’ environment.
 
-      We've added test and acceptance by using the APP_ENV environment variable. See 1PW `AWS services rocycle` about the commands you can run to deploy to each environment.
-
-  2. The project uses CI/CD to deploy to the test, acceptation and production environment!
+  2. The project uses CI/CD to deploy to the test and production environment! By default it's recommended to use [Netlify](https://www.netlify.com/)
 
 ## 📖 Project features
 
@@ -57,7 +50,7 @@
 
     See [gatsby-config.js](gatsby-config.js) for the following plugins configuration.
 
-    - [gatsby-source-graphql](https://www.gatsbyjs.com/plugins/gatsby-source-graphql/?=graphql) Plugin for connecting arbitrary GraphQL APIs to Gatsby’s GraphQL. _NOTE: This plugin requires that your Wagtail site uses the [Wagtail-Grapple](https://github.com/GrappleGQL/wagtail-grapple) library to build a compatible GraphQL endpoint. This plugin requires an existing GraphQL endpoint and does not work with a CMS out of the box._
+    - [gatsby-source-graphql](https://www.gatsbyjs.com/plugins/gatsby-source-graphql/?=graphql) Plugin for connecting arbitrary GraphQL APIs to Gatsby’s GraphQL.
     - [gatsby-plugin-module-resolver](https://www.gatsbyjs.com/plugins/gatsby-plugin-module-resolver/)
     Allows us to use the same folder structure as in our React Prime projects.
     - [gatsby-plugin-manifest](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=manifest) The web app manifest enabled by this plugin allows users to add your site to their home screen on most mobile browsers. The manifest provides configuration and icons to the phone.
